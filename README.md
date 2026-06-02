@@ -49,6 +49,8 @@ Repo: https://github.com/blockedby/go-openrouter
 
 I like small, sharp PRs with clear acceptance criteria, verification, and evidence.
 
+I also maintain [Pi Agent Setup](https://github.com/blockedby/pi-agent-setup), a public Pi/Codex agent-stack bootstrap for bounded engineering workflows: owner/implementer/auditor routing, reusable skills, browser/Codex integrations, explicit secrets boundaries, and smoke-test verification.
+
 Typical loop:
 
 1. define the problem;
