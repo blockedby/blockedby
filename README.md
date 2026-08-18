@@ -2,63 +2,76 @@
 
 Senior Backend & Applied AI Engineer focused on agentic developer tooling, production backends, and practical automation.
 
-I build systems where LLMs and coding agents are not just chat interfaces, but bounded, inspectable engineering tools.
+I build coding-agent systems as bounded, inspectable engineering infrastructure: explicit tools, reusable skills, isolated runtimes, multi-model delegation, and evidence-backed verification.
 
-## What I work on
+## Current focus
 
-- Coding-agent workflows and developer productivity tooling
-- Codex / Pi / Claude-style agent integrations
-- Deterministic web evidence + LLM summarization
-- Backend systems in Go, TypeScript, PostgreSQL, Redis
-- Production debugging, observability, CI/CD, and deployment automation
-- FinTech / DeFi / Web3 infrastructure
+- Pi/Pipi runtime and workflow tooling
+- Agent Skills for code review, browser automation, GitHub planning, and completion verification
+- Multi-agent orchestration across Pi, Codex, Claude, Luna, and Terra
+- Deterministic web evidence with optional LLM-assisted interpretation
+- Backend systems in Go and TypeScript/Node.js
+- Production debugging, observability, CI/CD, and Linux automation
 
 ## Selected work
 
-### Agentic engineering lab
+### [Pipi](https://github.com/blockedby/my-pi-setup) — my current agent environment
 
-Public index of my AI tooling, agent workflows, OSS contributions, and sanitized production case studies.
+An isolated Pi setup with its own pinned runtime and `~/.pipi` state. It brings together subagent profiles, parallel workflows, background terminals, browser tooling, Codex-backed tools, reusable skills, and a dark GitHub-style interface without replacing a regular Pi installation. My integration work is maintained in a public fork of [`davis7dotsh/my-pi-setup`](https://github.com/davis7dotsh/my-pi-setup).
 
-Repo: https://github.com/blockedby/agentic-engineering-lab
+### [plan-gh-backlog](https://github.com/blockedby/plan-gh-backlog)
 
-### pi-codex-tools
+An Agent Skill and Python CLI that turns structured roadmaps into validated, dependency-aware GitHub backlogs. It supports deterministic batch planning and conflict-safe, idempotent publication of labels, milestones, epics, tasks, checklists, and native sub-issues.
 
-Pi extension exposing Codex CLI as bounded tools for deterministic web search/fetch, delegated coding tasks, patch validation, structured JSON outputs, debug logs, and timeouts.
+### [Evidence-Driven Code Review](https://github.com/blockedby/gpt5.6-reviewer)
 
-Repo: https://github.com/blockedby/pi-codex
+A review skill and contract toolkit that separates confidence from impact, routes only verified serious regressions back as blockers, and keeps closure review focused on the exact remediation surface.
 
-### Obscura browser runtime contribution
+### [pi-codex-tools](https://github.com/blockedby/pi-codex)
 
-Rust browser-runtime contribution fixing full-load navigation hangs on JS-heavy pages by adding bounded script/event-loop execution and regression tests.
+Pi tools for deterministic web search/fetch, Codex-assisted summaries, patch validation, and bounded delegated coding tasks with structured outputs, sandboxes, timeouts, and debug evidence.
 
-PR: https://github.com/h4ckf0r0day/obscura/pull/195
+### [browser-chrome skill](https://github.com/blockedby/browser-chrome-skill)
 
-### Hermes Agent gateway work
+A portable Agent Skills package for safe Chrome DevTools automation, with disposable headless sessions for public checks and a separate persistent headed mode for authenticated browser work.
 
-Fork/work around Hermes Agent messaging gateway behavior, including Telegram-based agent access workflows.
+### [Kwispr](https://github.com/blockedby/kwispr)
 
-Repo: https://github.com/blockedby/hermes-agent
+My actively developed fork of [`MaksBoi/kwispr`](https://github.com/MaksBoi/kwispr): Linux voice dictation for Wayland/KDE with cloud, OpenRouter, and local/offline STT; a Rust inference runtime; native KDE shortcuts and tray UI; rootless installation; and optional trusted-LAN inference.
 
-### Go OpenRouter SDK work
+## Reusable Agent Skills
 
-Go SDK work around OpenRouter / LLM API features such as streaming, reasoning, tool calling, structured outputs, prompt caching, multimodal inputs, and usage fields.
+I maintain a public [general-purpose skill set](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general) used across my Pi/Pipi workflows:
 
-Repo: https://github.com/blockedby/go-openrouter
+- [`backend-quality`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/backend-quality) — API, storage, validation, auth, idempotency, and data-safety review;
+- [`frontend-quality`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/frontend-quality) — frontend implementation and UI-quality checks;
+- [`devops-quality`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/devops-quality) — configuration, CI, containers, deployment, and runtime readiness;
+- [`visual-composition`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/visual-composition) — product-quality visual hierarchy, responsive composition, states, and interaction polish;
+- [`completion-verification`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/completion-verification) — fresh acceptance evidence before readiness or completion claims;
+- [`git-branching`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/git-branching) — safe PR-first branches, worktrees, rebases, and synchronization;
+- [`browser-chrome`](https://github.com/blockedby/browser-chrome-skill) — controlled headed and disposable headless Chrome automation;
+- [`explanatory-html-pages`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/explanatory-html-pages) — self-contained technical explainers with readable diagrams;
+- [`modern-skill-revising`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/modern-skill-revising) — focused context and instruction design for modern models.
+
+The standalone [`code-review`](https://github.com/blockedby/gpt5.6-reviewer/tree/main/skills/code-review) and [`plan-gh-backlog`](https://github.com/blockedby/plan-gh-backlog) skills extend this set with evidence-driven review and deterministic GitHub backlog publication.
+
+## Additional public engineering work
+
+- [Obscura upstream commit](https://github.com/h4ckf0r0day/obscura/commit/6dd1e4e65f5b91c58a2bf85d584aadf31f4eab6a) — merged Rust/CDP contribution attributed to `blockedby`, covering `awaitPromise`, DOM event and navigation side effects, click-submit parity, and end-to-end regression tests.
+- [Go OpenRouter SDK work](https://github.com/blockedby/go-openrouter) — fork/contribution work around streaming, reasoning, tool calling, structured outputs, prompt caching, multimodal inputs, and usage fields.
+- [vibe-practicum-vpn](https://github.com/blockedby/vibe-practicum-vpn) — public-safe Linux/KDE VPN and routing automation, test labs, guarded operations, and redacted diagnostics.
+- [Agentic Engineering Lab](https://github.com/blockedby/agentic-engineering-lab) — the broader index of public tooling, workflows, OSS evidence, and sanitized case studies.
 
 ## How I work
 
-I like small, sharp PRs with clear acceptance criteria, verification, and evidence.
+I prefer small, sharp PRs with explicit acceptance criteria and fresh evidence:
 
-I also maintain [Pi Agent Setup](https://github.com/blockedby/pi-agent-setup), a public Pi/Codex agent-stack bootstrap for bounded engineering workflows: owner/implementer/auditor routing, reusable skills, browser/Codex integrations, explicit secrets boundaries, and smoke-test verification.
-
-Typical loop:
-
-1. define the problem;
-2. split it into bounded slices;
-3. use agents for exploration, implementation, review, and tests;
-4. keep deterministic evidence separate from model output;
-5. verify with tests/builds/static checks;
-6. write down what changed and why.
+1. define the problem, constraints, and success conditions;
+2. split work into bounded, conflict-aware slices;
+3. delegate exploration, implementation, and audit to the right model or tool;
+4. keep deterministic evidence separate from model interpretation;
+5. verify with focused tests, builds, static checks, browser probes, or API evidence;
+6. record what changed, why, and what remains risky.
 
 ## Background
 
