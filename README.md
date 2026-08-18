@@ -35,6 +35,26 @@ Pi tools for deterministic web search/fetch, Codex-assisted summaries, patch val
 
 A portable Agent Skills package for safe Chrome DevTools automation, with disposable headless sessions for public checks and a separate persistent headed mode for authenticated browser work.
 
+### [Kwispr](https://github.com/blockedby/kwispr)
+
+My actively developed fork of [`MaksBoi/kwispr`](https://github.com/MaksBoi/kwispr): Linux voice dictation for Wayland/KDE with cloud, OpenRouter, and local/offline STT; a Rust inference runtime; native KDE shortcuts and tray UI; rootless installation; and optional trusted-LAN inference.
+
+## Reusable Agent Skills
+
+I maintain a public [general-purpose skill set](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general) used across my Pi/Pipi workflows:
+
+- [`backend-quality`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/backend-quality) — API, storage, validation, auth, idempotency, and data-safety review;
+- [`frontend-quality`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/frontend-quality) — frontend implementation and UI-quality checks;
+- [`devops-quality`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/devops-quality) — configuration, CI, containers, deployment, and runtime readiness;
+- [`visual-composition`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/visual-composition) — product-quality visual hierarchy, responsive composition, states, and interaction polish;
+- [`completion-verification`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/completion-verification) — fresh acceptance evidence before readiness or completion claims;
+- [`git-branching`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/git-branching) — safe PR-first branches, worktrees, rebases, and synchronization;
+- [`browser-chrome`](https://github.com/blockedby/browser-chrome-skill) — controlled headed and disposable headless Chrome automation;
+- [`explanatory-html-pages`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/explanatory-html-pages) — self-contained technical explainers with readable diagrams;
+- [`modern-skill-revising`](https://github.com/blockedby/pi-agent-setup/tree/main/skills/general/modern-skill-revising) — focused context and instruction design for modern models.
+
+The standalone [`code-review`](https://github.com/blockedby/gpt5.6-reviewer/tree/main/skills/code-review) and [`plan-gh-backlog`](https://github.com/blockedby/plan-gh-backlog) skills extend this set with evidence-driven review and deterministic GitHub backlog publication.
+
 ## Additional public engineering work
 
 - [Go OpenRouter SDK work](https://github.com/blockedby/go-openrouter) — fork/contribution work around streaming, reasoning, tool calling, structured outputs, prompt caching, multimodal inputs, and usage fields.
