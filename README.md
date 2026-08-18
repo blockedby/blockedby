@@ -57,6 +57,7 @@ The standalone [`code-review`](https://github.com/blockedby/gpt5.6-reviewer/tree
 
 ## Additional public engineering work
 
+- [Obscura upstream commit](https://github.com/h4ckf0r0day/obscura/commit/6dd1e4e65f5b91c58a2bf85d584aadf31f4eab6a) — merged Rust/CDP contribution attributed to `blockedby`, covering `awaitPromise`, DOM event and navigation side effects, click-submit parity, and end-to-end regression tests.
 - [Go OpenRouter SDK work](https://github.com/blockedby/go-openrouter) — fork/contribution work around streaming, reasoning, tool calling, structured outputs, prompt caching, multimodal inputs, and usage fields.
 - [vibe-practicum-vpn](https://github.com/blockedby/vibe-practicum-vpn) — public-safe Linux/KDE VPN and routing automation, test labs, guarded operations, and redacted diagnostics.
 - [Agentic Engineering Lab](https://github.com/blockedby/agentic-engineering-lab) — the broader index of public tooling, workflows, OSS evidence, and sanitized case studies.
